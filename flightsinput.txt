@@ -1,0 +1,34 @@
+reset
+create 0 JetBlue JFK 12/20/20 AM OPEN YES 1
+select_all
+print_selection
+delete 0
+select_all
+print_selection
+reset
+load_csv Flights.csv
+select_by_id 5
+print_selection
+select Airline JetBlue
+print_selection
+open_flights
+print_selection
+takes_miles
+print_selection
+location BOS
+print_selection
+date 12/20/20
+print_selection
+price 2
+print_selection
+time AM
+print_selection
+save_csv flightlist.csv
+reset
+load_csv flightlist.csv
+select_all
+print_selection
+filter JetBlue JFK 12/20/20 AM OPEN YES 1
+print_selection
+reset
+exit
